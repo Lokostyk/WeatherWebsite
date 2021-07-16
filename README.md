@@ -1,0 +1,3 @@
+# Weather app
+
+The goal is to show user weather from every Poland provinces on map. And detailed information like weather for next few days at chart, wind speed ...
