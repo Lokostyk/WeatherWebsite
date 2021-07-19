@@ -1,6 +1,14 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+    <!--Files to create map-->
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.7.1/dist/leaflet.css"
+    integrity="sha512-xodZBNTC5n17Xt2atTPuE1HxjVMSvLVW9ocqUKLsCC5CXdbqCmblAshOMAS6/keqq/sMZMZ19scR4PsZChSR7A=="
+    crossorigin=""/>
+    <script src="https://unpkg.com/leaflet@1.7.1/dist/leaflet.js"
+    integrity="sha512-XQoYMqMTK8LvdxXYG3nZ448hOEQiglfqkJs1NOQV44cWnUrBc8PkAOcXy20w0vlaXaVUearIOBhiXZ5V3ynxwA=="
+    crossorigin=""></script>
+    <!--Rest head files-->
     <link href="css.css" rel="stylesheet">
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -8,7 +16,17 @@
     <title>Weather</title>
 </head>
 <body>
-    <img src="logo.png">
+    <div class="background"></div>
+    <header>
+        <nav>
+            <img src="logo.png" class="logo">
+            <button class="nav_element">Current Weather</button>
+            <button class="nav_element">Next 5 days forecast</button>
+            <button class="nav_element">Temperature Map</button>
+        </nav>
+    <h1 class="title">Current weather in Poland!</h1>
+
+    </header>
 <script src="js.js"></script>
 </body>
 </html>
