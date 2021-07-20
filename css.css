@@ -11,6 +11,7 @@
 }
 body {
     background-color: #f5f5f5;
+    overflow-x: hidden;
 }
 .background {
     position: absolute;
@@ -18,6 +19,7 @@ body {
     top: 0;
     height: 65vh;
     width: 100vw;
+    overflow: hidden;
     background: url("ballons.jpg") center/cover no-repeat;
     clip-path: polygon(0 0, 100% 0%, 100% 86%, 0 96%);
     transition: all 1s;
@@ -29,6 +31,7 @@ header {
     clip-path: polygon(0 0, 100% 0%, 100% 86%, 0 96%);
     transition: all 1s;
     min-height: 65vh;
+    margin-bottom: 1.5rem;
 }
 nav {
     display: flex;
@@ -61,6 +64,40 @@ nav {
     width: 28rem;
     font-size: 2.2rem;
     color: white;
+}
+main {
+    display: flex;
+    position: relative;
+    justify-content: center;
+}
+#weatherMap {
+    margin: 1rem 0;
+    border-top-right-radius: 7px;
+    z-index: 10;
+}
+.mapBackground {
+    position: absolute;
+    right: 193px;
+    top: -15px;
+    height: 95vh;
+    width: 60vw;
+    border-top-right-radius: 25px;
+    background-color: rgb(138, 58, 11,.9);
+    z-index: 0;
+}
+.weatherIcon {
+    position: absolute;
+    left: -25px;
+    bottom: -20px;
+    height: 60px;
+}
+.weatherText {
+    position: absolute;
+    left: -17px;
+    bottom: -32px;
+    font-size: 1.4rem;
+    color: #c48818;
+    font-weight: bold;
 }
 @media screen and (max-width:870px) {
     .logo {
