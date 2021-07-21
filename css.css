@@ -45,7 +45,7 @@ nav {
     backdrop-filter: blur(4px);
 }
 .nav_element {
-    border: 2px solid white;
+    border: none;
     border-radius: 25px;
     font-size: 1.25rem;
     padding: .3rem .8rem;
@@ -68,22 +68,22 @@ nav {
 main {
     display: flex;
     position: relative;
-    justify-content: center;
 }
 #weatherMap {
     margin: 1rem 0;
-    border-top-right-radius: 7px;
+    border-top-left-radius: 7px;
+    margin: 20px 30px;
     z-index: 10;
 }
 .mapBackground {
     position: absolute;
-    right: 193px;
+    right: 0px;
     top: -15px;
-    height: 95vh;
-    width: 60vw;
-    border-top-right-radius: 25px;
-    background-color: rgb(138, 58, 11,.9);
-    z-index: 0;
+    height: 750px;
+    width: 450px;
+    border-top-left-radius: 25px;
+    background-color: #ffdfba;
+    z-index: -1;
 }
 .weatherIcon {
     position: absolute;
@@ -93,11 +93,98 @@ main {
 }
 .weatherText {
     position: absolute;
-    left: -17px;
-    bottom: -32px;
+    left: -6px;
+    bottom: -20px;
     font-size: 1.4rem;
     color: #c48818;
     font-weight: bold;
+}
+.weatherText:last-child {
+    transform: translate(-15px,10px);
+    transform-origin: center;
+}
+.mapCities {
+    display: grid;
+    grid-template-rows: auto 1fr;
+    justify-items: center;
+    height: 500px;
+    margin-left: .8rem;
+    margin-top: 1.3rem;
+    text-align: center;
+    color:  rgb(129, 120, 120);
+}
+.listTitle {
+    background-color: #bae1ff;
+    border-radius: 10px;
+    margin-bottom: .8rem;
+    padding: .6rem;
+}
+.list {
+    display: grid;
+    grid-template-columns: auto auto;
+    grid-auto-rows: 3rem;
+    align-items: center;
+}
+.mapCities .btn {
+    background-color: #bae1ff;
+    list-style-type: none;
+    border-radius: 8px;
+    padding: 2px 40px;
+    font-size: 1.3rem;
+    margin: .3rem 1rem;
+    color: rgb(129, 120, 120);
+    border: none;
+}
+footer {
+    display: grid;
+    grid-template-columns: auto 2% 1fr;
+    align-items: center;
+    position: relative;
+    margin-top: 40px;
+    bottom: -7px;
+    background-color: rgb(181, 234, 215,.5);
+    background-blend-mode: multiply;
+    grid-template-rows: auto auto;
+    clear: both;
+}
+svg {
+    height: 25px;
+    fill: black;
+    opacity: .7;
+    margin: 11px 8px 8px 8px;
+}
+svg:first-child {
+    margin-left: 16px;
+}
+svg:last-child {
+    margin-right: 16px;
+}
+.fb:hover {
+    fill: #026cee;
+}
+.ln:hover {
+    fill: #0077B7;
+}
+a {
+    text-decoration: none;
+}
+@media screen and (min-width: 1500px) {
+    main {
+        float: right;
+    }
+    .mapBackground {
+        width: 700px;
+        height: 708px;
+    }    
+}
+@media screen and (min-width:1150px) {
+    .mapBackground {
+        width: 600px;
+    }  
+}
+@media screen and (max-width: 950px){
+    main {
+    }
 }
 @media screen and (max-width:870px) {
     .logo {
@@ -110,7 +197,4 @@ main {
         width: 22.3rem;
         font-size: 1.7rem;
     }
-}
-@media screen and (max-width: 600px){
-    
 }
