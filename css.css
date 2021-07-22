@@ -53,6 +53,7 @@ nav {
     color: white;
     background: transparent;
 }
+/* Adding menu button */
 .menu-btn {
     display: none;
     flex-direction: column;
@@ -85,6 +86,7 @@ nav {
     margin: -0 0 0 0;
     transition: 1s all;
 }
+
 .title {
     position: absolute;
     bottom: 30%;
