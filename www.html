@@ -20,10 +20,17 @@
     <div class="background"></div>
     <header>
         <nav>
-            <img src="logo.png" class="logo">
-            <a class="nav_element" style="border-bottom: 1px solid white;border-radius: 0px">Temperature Map</a>
-            <a class="nav_element">Next 5 days forecast</a>
-            <a class="nav_element">Info</a>
+            <img src="pictures/logo.png" class="logo">
+            <div class="nav_wrapper">
+                <a class="nav_element" style="border-bottom: 1px solid white;border-radius: 0px">Temperature Map</a>
+                <a class="nav_element">Next 5 days forecast</a>
+                <a class="nav_element">Info</a>
+            </div>
+            <button class="menu-btn">
+                <span class="element"></span>
+                <span class="element"></span>
+                <span class="element"></span>
+            </button>
         </nav>
     <h1 class="title">Current weather in Poland!</h1>
     </header>
@@ -36,8 +43,10 @@
             <ul class="list">
             </ul>
         </div>
-        <div id="weatherMap" style="height: 600px;width:900px;"></div>
-        <div class="mapBackground"></div>
+        <div class="wrapper">
+            <div id="weatherMap" style="height: 600px;"></div>
+            <div class="mapBackground"></div>
+        </div>
     </main>
     <footer>
         <div>
