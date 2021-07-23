@@ -53,6 +53,7 @@ nav {
     color: white;
     background: transparent;
 }
+
 /* Adding menu button */
 .menu-btn {
     display: none;
@@ -204,6 +205,69 @@ a {
 .appear {
     height: 140px !important;
 }
+
+/* 5 days weather section */
+.chart_container {
+    border: 1px solid rgb(138, 133, 133);
+    border-radius: 10px;
+    width: 60vw;
+    margin-top: 2rem;
+    padding: .5rem;
+}
+.chart_container:last-child {
+    margin-bottom: 1rem;
+}
+.chart_title {
+    text-align: center;
+    color: rgb(109, 107, 107);
+    margin: .5rem 0;
+}
+
+/*Right corner list and button */
+.right_corner_button {
+    background-color: inherit;
+    border: none;
+}
+.btn_svg {
+    height: 40px;
+    fill: black;
+    margin: 0px;
+    transition: 1s all;
+}
+.side_menu {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: fixed;
+    z-index: 10;
+    right: 1.5vw;
+    bottom: 10px;
+}
+.side_menu a {
+    font-size: 1.1rem;
+    color: grey;
+    margin-bottom: .5rem;
+    padding: .5rem;
+    background-color: #fff;
+    clip-path: polygon(0 5%, 100% 0, 100% 95%, 0% 100%);
+}
+.container_one {
+    display: flex;
+    flex-direction: column;
+    margin-top: .5rem;
+}
+.container_two {
+    display: flex;
+    width: 0px;
+    overflow: hidden;
+    flex-direction: column;
+    margin-top: .5rem;   
+}
+.transition_one {
+    transform: rotate(90deg);
+}
+
+/* Mobile */
 @media screen and (min-width: 1500px) {
     main {
         float: right;
@@ -243,6 +307,11 @@ a {
     .mapBackground {
         width: 60vw;
     }
+    /* 5 days weather section */
+    .chart_container {
+        width: 98vw;
+        margin-top: 1rem;
+    }
 }
 @media screen and (max-width:870px) {
     .logo {
@@ -262,7 +331,7 @@ a {
         font-size: 1rem;
     }
 }
-@media screen and (max-width: 530px){
+@media screen and (max-width: 590px){
     nav {
         flex-direction: column;
     }

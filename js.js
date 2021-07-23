@@ -1,6 +1,7 @@
 const everyVoivodship = [{id:3099434},{id:3080165},{id:3083829},{id:3090104},{id:3102014},
 {id:776069},{id:765876},{id:3088171},{id:6695624},{id:3093133},{id:3081368},
 {id:3090048},{id:3096472},{id:769250},{id:3094802},{id:7530819}]
+//Mobile menu button
 const btn = document.querySelector(".menu-btn")
 
 btn.addEventListener("click",function(btn){
