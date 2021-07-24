@@ -418,6 +418,6 @@ a {
 }
 @media screen and (max-height: 570px){
     #weatherMap {
-        height: 80vh;
+        height: 60vh;
     }
 }
