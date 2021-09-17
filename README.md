@@ -1,3 +1,10 @@
 # Weather app
-
-The goal is to show user weather from every Poland provinces on map. And detailed information like weather for next few days at chart, wind speed ...
+<h2>Tehnologies used:</h2>
+-HTML\
+-CSS\
+-Javascript\
+-Leaflet.js\
+-Chart.js\
+<h2>Application presents:</h2>
+-current weather on map for 20 polish cities\
+-weather for next 5 days on charts for 20 polish cities
